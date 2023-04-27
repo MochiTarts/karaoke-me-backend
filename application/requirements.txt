@@ -7,3 +7,6 @@ celery==5.2.7
 redis
 schema==0.7.5
 authlib>=1.0
+psycopg2-binary==2.9.6
+flask-sqlalchemy==3.0.3
+Flask-Migrate==4.0.4

@@ -1,8 +1,8 @@
-from flask import Flask, Blueprint, request, jsonify, session
+from flask import Blueprint, jsonify
 from functools import wraps
-from schema import Schema, And, Use, Optional, SchemaError
+from schema import Schema, Optional
 import re
-from decorators import login_required
+from application.decorators import login_required
 
 auth_router = Blueprint("auth_router", __name__)
 

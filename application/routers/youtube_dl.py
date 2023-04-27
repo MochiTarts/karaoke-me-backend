@@ -1,7 +1,6 @@
 import uuid, os, shutil, yt_dlp, tempfile
-from flask import Flask, Blueprint, request, jsonify, send_file, redirect, url_for
-from celery import shared_task
-from decorators import login_required
+from flask import Blueprint, request, jsonify, send_file
+from application.decorators import login_required
 
 youtube_dl_router = Blueprint("youtube_dl_router", __name__)
 
