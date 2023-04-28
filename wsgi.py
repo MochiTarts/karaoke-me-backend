@@ -11,9 +11,10 @@ def home():
 
 @app.route("/api/login")
 def login():
-  return oauth.auth0.authorize_redirect(
-    redirect_uri=url_for("callback", _external=True)
-  )
+  return "Login"
+  #return oauth.auth0.authorize_redirect(
+  #  redirect_uri=url_for("callback", _external=True)
+  #)
 
 @app.route("/api/callback", methods=["GET", "POST"])
 def callback():

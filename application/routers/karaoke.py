@@ -15,7 +15,6 @@ karaoke_schema = Schema({
 @karaoke_router.post("/api/karaoke")
 def add_karaoke():
   from application.models.karaokeinfo import KaraokeInfo
-  from application import db
 
   body = request.get_json()
   try:
